@@ -1,0 +1,56 @@
+/* Container Detail Project Start */
+
+.container-detail-project {
+  width: 100%;
+  /* border: 1px solid black; */
+}
+
+.container-detail-project h1 {
+  text-align: center;
+  margin: 2rem auto;
+}
+
+.detail-header {
+  display: flex;
+  margin: 1.5rem 5rem;
+}
+
+.left-header img {
+  width: 70rem;
+  height: 35rem;
+  object-fit: cover;
+  margin-right: 5rem;
+}
+
+.right-header {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.right-header .duration {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.right-header p,
+.right-header i {
+  font-size: 21px;
+}
+
+.right-header .technology {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.detail-body {
+  display: flex;
+  margin: 1.5rem 5rem;
+}
+
+.detail-body p {
+  font-size: 15px;
+  line-height: 1.7rem;
+}
