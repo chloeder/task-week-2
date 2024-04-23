@@ -22,20 +22,19 @@
     <link rel="stylesheet" href="assets/styles/detail-project.css" />
   </head>
   <body>
-    <div class="navbar">
-      <div class="menu">
-        <ul>
-          <a href="index.html">
-            <img src="assets/img/s-logo.webp" alt="logo" />
-          </a>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="project.html" class="active">My Project</a></li>
-        </ul>
-      </div>
-      <div class="contact-me">
-        <button><a href="contact-form.html">Contact Me</a></button>
-      </div>
-    </div>
+    <nav>
+      <a href="index.html">
+        <img src="assets/img/s-logo.webp" alt="logo" />
+      </a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="project.html">My Project</a></li>
+        <li><a href="contact-form.html" class="contact-me">Contact Me</a></li>
+      </ul>
+      <button class="hamburger" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
     <div class="container-detail-project">
       <h1>Dumbways Web App</h1>
       <div class="detail-header">
@@ -126,7 +125,7 @@
         </p>
       </div>
     </div>
-
+    <script src="./assets/scripts/main.js"></script>
     <script src="./assets/scripts/detail-project.js"></script>
   </body>
 </html>

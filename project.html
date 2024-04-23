@@ -22,21 +22,20 @@
     <link rel="stylesheet" href="assets/styles/project.css" />
   </head>
   <body>
-    <div class="navbar">
-      <div class="menu">
-        <ul>
-          <a href="index.html">
-            <img src="assets/img/s-logo.webp" alt="logo" />
-          </a>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="project.html" class="active">My Project</a></li>
-        </ul>
-      </div>
-      <div class="contact-me">
-        <button><a href="contact-form.html">Contact Me</a></button>
-      </div>
-    </div>
-    <div class="container-form">
+    <nav>
+      <a href="index.html">
+        <img src="assets/img/s-logo.webp" alt="logo" />
+      </a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="project.html" class="active">My Project</a></li>
+        <li><a href="contact-form.html" class="contact-me">Contact Me</a></li>
+      </ul>
+      <button class="hamburger" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+    <section class="container-form">
       <h1>ADD MY PROJECT</h1>
       <form action="#">
         <div class="form-input">
@@ -113,8 +112,8 @@
           <button type="submit" onclick="addProject(event)">Submit</button>
         </div>
       </form>
-    </div>
-    <div class="container-project">
+    </section>
+    <section class="container-project">
       <h1 class="header-project">My Project</h1>
 
       <div class="card-project">
@@ -140,7 +139,8 @@
           </div>
         </a>
       </div>
-    </div>
+    </section>
+    <script src="./assets/scripts/main.js"></script>
     <script src="./assets/scripts/project.js"></script>
   </body>
 </html>

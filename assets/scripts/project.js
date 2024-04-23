@@ -145,3 +145,26 @@ const listProject = () => {
     anchor.appendChild(card);
   });
 };
+
+// // Number of cows
+// const numCows = 5;
+
+// // Initialize the total weight
+// let totalWeight = 0;
+
+// // Iterate over each day of the week
+// for (let day = 1; day <= 7; day++) {
+//   // Prompt the farmer to input the weight for each cow
+//   console.log(`Day ${day}:`);
+//   for (let cow = 1; cow <= numCows; cow++) {
+//     const weight = parseFloat(prompt(`Day ${day} - Cow ${cow} weight (kg):`));
+//     totalWeight += weight;
+//     console.log(`Cow ${cow} weight: ${weight} kg`);
+//     console.log(`Total weight: ${totalWeight} kg`);
+//   }
+// }
+
+// // Calculate the average weight
+// const averageWeight = totalWeight / (numCows * 7);
+
+// console.log(`The average weight of the cows for the week is: ${averageWeight}`);
