@@ -98,7 +98,11 @@ for (const testimonial of listTestimonial) {
 document.querySelector(".testimonial-card").innerHTML = testimonialHtml;
 
 const allTestimonial = () => {
-  document.querySelector(".testimonial-card").innerHTML = testimonialHtml;
+  const listedTestimonial = listTestimonial.map((testimonial) => {
+    return testimonial.html();
+  });
+
+  document.querySelector(".testimonial-card").innerHTML = listedTestimonial;
 };
 
 const filterRating = (rating) => {
