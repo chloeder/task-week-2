@@ -7,16 +7,20 @@
 }
 
 body {
-  position: relative;
+  /* position: relative; */
   background-color: rgb(196, 203, 214);
   font-family: "Poppins", sans-serif;
 }
 
 nav {
+  position: relative;
   width: 100%;
   background-color: rgb(236, 235, 235);
-  margin-bottom: 3rem;
-  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+nav a img {
+  margin: 1rem;
 }
 
 nav img {
@@ -24,18 +28,16 @@ nav img {
 }
 
 ul {
-  text-align: center;
   display: none;
-  position: fixed;
-  right: 0;
-  top: 74px;
+  padding-left: 1rem;
   width: 100%;
-  height: 100vh;
+  height: 340px;
   background-color: black;
 }
 
 ul li {
-  margin-top: 1rem;
+  text-align: center;
+  padding-top: 2rem;
 }
 
 ul li a {
@@ -52,7 +54,7 @@ ul li a.active {
 }
 
 .contact-me {
-  padding: 7px;
+  padding: 0.5rem;
   cursor: pointer;
   background-color: rgb(7, 33, 50);
   color: white;
@@ -67,9 +69,9 @@ ul li a.active {
 }
 
 .hamburger {
-  float: right;
-  margin-top: 5px;
-  margin-right: 10px;
+  top: 20px;
+  right: 15px;
+  position: absolute;
   font-size: 26px;
   border: none;
 }
@@ -250,39 +252,43 @@ ul li a.active {
 /* Meadia Queries */
 @media only screen and (min-width: 992px) {
   nav {
-    position: fixed;
+    display: flex;
+    align-items: center;
   }
 
   ul {
+    width: 100% !important;
     display: flex;
-    gap: 1rem;
     background: none;
-    top: 3px;
-    left: 5rem;
+    height: auto;
+    width: auto;
+    padding: 0;
+    gap: 1rem;
+    justify-content: space-between;
+  }
+
+  .nav-links {
+    display: flex;
   }
 
   ul li {
-    text-align: center;
+    /* border: 1px solid black; */
+    padding: 0 0.7rem;
   }
 
   ul li a {
-    font-size: 17px;
+    font-size: 18px;
     color: black;
   }
 
-  a.contact-me {
-    position: absolute;
-    top: 10px;
-    right: 6rem;
+  ul li a.contact-me {
+    justify-content: flex-end;
   }
 
   .hamburger {
     display: none;
   }
+}
 
-  .container-form {
-    position: relative;
-    top: 8rem;
-    z-index: -1;
-  }
+@media only screen and (min-width: 1200px) {
 }
